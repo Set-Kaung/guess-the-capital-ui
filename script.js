@@ -23,7 +23,7 @@ function renderQuestion(){
 }
 
 async function getQuestion() {
-    const response = await fetch("https://guess-the-capital-61f4.onrender.com", { mode: 'cors'});
+    const response = await fetch("https://guess-the-capital-61f4.onrender.com", { mode: 'no-cors'});
     const question = await response.json();
     Ques = new Question(question.country, question.capital)
     renderQuestion()
