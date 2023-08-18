@@ -19,7 +19,7 @@ function renderQuestion(){
     if(enterBtn.classList.contains("hide")){
         enterBtn.classList.remove("hide")
     }
-    questionContainer.textContent = `What is the capital of ${Ques.country}?` 
+    questionContainer.textContent = `What is the capital city of ${Ques.country}?` 
 }
 
 async function getQuestion() {
@@ -41,9 +41,9 @@ function checkAnswer(answer){
     let capital = Ques.capital
 
     if(answer.toLowerCase() == capital.toLowerCase()){
-        questionContainer.textContent = `You are right. The capital of ${country} is ${capital}.`
+        questionContainer.textContent = `You are right. The capital city of ${country} is ${capital}.`
     }else{
-        questionContainer.textContent = `Sorry. The capital of ${country} is ${capital}.`
+        questionContainer.textContent = `Sorry. The capital city of ${country} is ${capital}.`
     }
     enterBtn.classList.toggle("hide")
     againBtn.classList.toggle("hide")
