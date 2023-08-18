@@ -1,14 +1,28 @@
-body{
-    background-color: white;
-    color: 	#C1666B;
+*{
+    margin: 0;
 }
+
+html{
+    min-height: 100dvh;
+}
+body{
+    min-height: 100vh;
+    background-color: white;
+    color: 	#FA7268; 
+} 
 .main-body{
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
+    min-height: 100dvh;
+    background-image: url(./assests/img/layered-waves-haikei.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .question-container{
     padding: .8em;
@@ -22,11 +36,15 @@ body{
 }
 
 .answer-container{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:.75rem;
+    gap:1em;
+}
+
+.answer-container>*{
+    padding: .05em;
 }
 
 .answer-container label{
@@ -34,13 +52,9 @@ body{
 }
 
 .answer-container button{
-    
     border-radius: 10%;
     padding: .5rem 1.25rem;
-    font-size: .8em;
-    color: #E7DFC6;
-    background-color: #DC758F;
-    border: solid #DC758F 2px ;
+    font-size: 1.5rem;
 }
 
 .answer-container button {
@@ -75,6 +89,14 @@ body{
         display: flex;
         justify-content: center;
         font-size: 1.65rem;
+    }
+
+    body{
+        background-image: url(./assests/img/layered-waves-haikei-vertical.png);
+        background-repeat: no-repeat;
+    }
+    .main-body{
+        background-image: none;
     }
 
     
